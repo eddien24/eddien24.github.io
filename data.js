@@ -15,7 +15,7 @@ async function loadContent() {
   try {
     const data = DATA;
 
-    setupNavigation(data);
+    setupNavigation(data.publications);
     obfuscateEmail(data.email);
     renderBio(data.bio, data.links);
     renderProjects(data.projects, data.links);
@@ -28,16 +28,25 @@ async function loadContent() {
   }
 }
 
-function setupNavigation() {
+function setupNavigation(publications) {
   const nav = document.querySelector("nav.top-nav ul");
   if (!nav) return;
 
-  const sections = [
-    { label: "Home", id: "", href: "#" },
-    { label: "Publications", id: "publications", href: "#publications" },
+  const sections = [{ label: "Home", id: "", href: "#" }];
+
+  // Only add Publications link if there are publications
+  if (publications && publications.length > 0) {
+    sections.push({
+      label: "Publications",
+      id: "publications",
+      href: "#publications",
+    });
+  }
+
+  sections.push(
     { label: "Projects", id: "projects", href: "#projects" },
     { label: "Teaching", id: "teaching", href: "#teaching" },
-  ];
+  );
 
   nav.innerHTML = sections
     .map((section) => `<li><a href="${section.href}">${section.label}</a></li>`)
@@ -276,11 +285,17 @@ function buildPublicationExtras(pub) {
 
 function renderPublications(publications, collaborators, yourName) {
   const container = document.getElementById("publications-container");
+  const section = document.getElementById("publications");
 
   if (!publications || publications.length === 0) {
     container.innerHTML = "<p>No publications listed yet.</p>";
+    // Hide the entire section
+    if (section) section.style.display = "none";
     return;
   }
+
+  // Show the section if it has publications
+  if (section) section.style.display = "block";
 
   const sorted = [...publications].sort(
     (a, b) => (b.year || 0) - (a.year || 0),

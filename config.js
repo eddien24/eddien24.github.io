@@ -57,66 +57,24 @@ export const DATA = {
     },
   ],
   publications: [
-    {
-      authors: ["self", "jane_doe", { name: "Carol Davis" }],
-      title: "Fast Binary Analysis for Malware Detection",
-      url: "https://dl.acm.org/doi/example",
-      venue: "OOPSLA 2022",
-      venue_url: "https://wisec.acm.org/",
-      year: 2021,
-      abstract:
-        "We present a novel approach to binary analysis that significantly improves detection rates for malware through efficient pattern matching and structural analysis.",
-      links: [
-        {
-          label: "pdf",
-          url: "assets/papers/paper2022.pdf",
-        },
-        {
-          label: "slides",
-        },
-        {
-          label: "code",
-        },
-      ],
-      bibtex:
-        "@inproceedings{paper2022,\n  title={Fast Binary Analysis for Malware Detection},\n  author={Edward Nguyen and Bob Williams and Carol Davis},\n  booktitle={Proceedings of the 15th ACM Conference on Security and Privacy in Wireless and Mobile Networks},\n  year={2022}\n}",
-    },
-    {
-      authors: ["akshay_n", "self"],
-      title: "A Cool Paper: Something that I published",
-      url: "https://dl.acm.org/doi/example",
-      venue: "SIGCOMM 2022",
-      venue_url: "https://wisec.acm.org/",
-      year: 2022,
-      abstract:
-        "We present a novel approach to binary analysis that significantly improves detection rates for malware through efficient pattern matching and structural analysis.",
-      links: [
-        {
-          label: "pdf",
-          url: "assets/papers/paper2022.pdf",
-        },
-      ],
-      bibtex:
-        "@inproceedings{paper2022,\n  title={Fast Binary Analysis for Malware Detection},\n  author={Edward Nguyen and Bob Williams and Carol Davis},\n  booktitle={Proceedings of the 15th ACM Conference on Security and Privacy in Wireless and Mobile Networks},\n  year={2022}\n}",
-    },
-    {
-      authors: ["hi there", "self"],
-      title: "A Cool Paper: Something that I published",
-      url: "https://dl.acm.org/doi/example",
-      venue: "NSDI 2019",
-      venue_url: "https://wisec.acm.org/",
-      year: 2019,
-      abstract:
-        "We present a novel approach to binary analysis that significantly improves detection rates for malware through efficient pattern matching and structural analysis.",
-      links: [
-        {
-          label: "pdf",
-          url: "assets/papers/paper2022.pdf",
-        },
-      ],
-      bibtex:
-        "@inproceedings{paper2022,\n  title={Fast Binary Analysis for Malware Detection},\n  author={Edward Nguyen and Bob Williams and Carol Davis},\n  booktitle={Proceedings of the 15th ACM Conference on Security and Privacy in Wireless and Mobile Networks},\n  year={2022}\n}",
-    },
+    //   {
+    //     authors: ["hi there", "self"],
+    //     title: "A Cool Paper: Something that I published",
+    //     url: "https://dl.acm.org/doi/example",
+    //     venue: "NSDI 2019",
+    //     venue_url: "https://wisec.acm.org/",
+    //     year: 2019,
+    //     abstract:
+    //       "We present a novel approach to binary analysis that significantly improves detection rates for malware through efficient pattern matching and structural analysis.",
+    //     links: [
+    //       {
+    //         label: "pdf",
+    //         url: "assets/papers/paper2022.pdf",
+    //       },
+    //     ],
+    //     bibtex:
+    //       "@inproceedings{paper2022,\n  title={Fast Binary Analysis for Malware Detection},\n  author={Edward Nguyen and Bob Williams and Carol Davis},\n  booktitle={Proceedings of the 15th ACM Conference on Security and Privacy in Wireless and Mobile Networks},\n  year={2022}\n}",
+    //   },
   ],
   teaching: [
     {
