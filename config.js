@@ -1,6 +1,6 @@
 export const DATA = {
   me: "Edward Nguyen",
-  bio: "I am an undergraduate at [brown] studying Mathematics and Computer Science. My research interests are in systems, particularly networking, programming languages, and verification. Through research and teaching, I aim to promote curiosity in learning and spread joy by cultivating collaborative communities. My recent projects have been in collaboration with [akshay_n] and [christina_s].\n \n Outside of academics, I enjoy food, rock climbing, board games, video games, and playing trumpet for any ensemble I have time for.",
+  bio: "Hi! My name is Eddie and I am an undergraduate at [brown] studying Mathematics and Computer Science. My research interests are in systems, particularly networking, programming languages, and verification. Through research and teaching, I aim to promote curiosity in learning and spread joy by cultivating collaborative communities. My recent projects have been in collaboration with [akshay_n] and [christina_s].\n \n Outside of academics, I enjoy food, rock climbing, board games, video games, and playing trumpet for any ensemble I have time for.",
   email: {
     address: "edward_nguyen",
     domain: "brown.edu",
